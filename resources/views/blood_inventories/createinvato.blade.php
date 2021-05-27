@@ -7,7 +7,7 @@
                 <h2>Add New Product</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+                <a class="btn btn-primary" href="#" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -22,45 +22,40 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('projects.store') }}" method="POST" >
+    <form action="{{ route('blood_inventories.store') }}" method="POST" >
         @csrf
     
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Firstname:</strong>
-                    <input type="text" name="fname" class="form-control" placeholder="Firstname">
+                    <strong>Blood Group:</strong>
+                    <input type="text" name="blood_group" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Lastname:</strong>
-                    <input type="text" name="lname" class="form-control" placeholder="lastname">
+                    <strong>Volume:</strong>
+                    <input type="text" name="volume" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Age</strong>
-                    <input type="text" name="age" class="form-control" placeholder="age">
+                    <strong>Status</strong>
+                    <input type="text" name="status" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Phone:</strong>
-                    <input type="text" name="phone" class="form-control" placeholder="Phone">
+                    <strong>Donor ID:</strong>
+                    <input type="text" name="donor_id" class="form-control" placeholder="">
                 </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Email:</strong>
-                    <input type="email" name="email" class="form-control" placeholder="Email">
+                    <strong>Request ID:</strong>
+                    <input type="text" name="request_id" class="form-control" placeholder="">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Address:</strong>
-                    <input type="text" name="address" class="form-control" placeholder="address">
-                </div>
-            </div>
+            
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>

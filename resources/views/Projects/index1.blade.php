@@ -8,7 +8,7 @@
                 <h2 style="margin-left:20;">Blood Donors! </h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('blood_inventories.create') }}" title="Create a project"> <i class="fas fa-plus-circle"></i>
+                <a class="btn btn-success" href="{{ route('projects.create1') }}" title="Create a project"> <i class="fas fa-plus-circle"></i>
                     </a>
             </div>
         </div>
@@ -44,13 +44,13 @@
                
                 
                 <td>
-                    <form action="{{ route('blood_inventories.destroy', $blood_inventories->id) }}" method="POST">
+                    <form action="{{ route('destroy1', $blood_inventories->id) }}" method="POST">
 
-                        <a href="{{ route('blood_inventories.show', $blood_inventories->id) }}" title="show">
+                        <a href="{{ route('show1', $blood_inventories->id) }}" title="show">
                             <i class="fas fa-eye text-success  fa-lg"></i>
                         </a>
 
-                        <a href="{{ route('blood_inventories.edit', $blood_inventories->id) }}">
+                        <a href="{{ route('edit1', $blood_inventories->id) }}">
                             <i class="fas fa-edit  fa-lg"></i>
 
                         </a>

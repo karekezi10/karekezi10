@@ -19,7 +19,7 @@ class Blood_inventoryController extends Controller
     {
         $blood_inventories = blood_inventory::latest()->paginate(5);
 
-        return view('createinvato', compact('projects'))
+        return view('blood_inventories.createinvato')
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 

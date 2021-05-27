@@ -1,13 +1,16 @@
 @extends('layouts.app')
 @extends('layouts.Header')
 @section('content')
+
 <div class="card" width="200px" style="background-color: white;" >
     <div class="card-header"  style="border: 2px #020202;">
         <div class="card-body">
             <div class="pull-left card-header">
-                <h4 style="margin-left:20;   color: #000;">Blood Donors! </h4>
+                <h5 style="margin-left:20;   color: #000;">List of Blood Donors! </h5>
             </div>
-            
+            <a href="{{ route('projects.create') }}" class="btn btn-primary btn-block float-right" style="width: 15%; height: 5%; font-size: small; margin-left: 85%;">
+                <i class="fa fa-plus"></i>  New Entry
+            </a>
         </div>
     </div>
 
@@ -31,7 +34,7 @@
         </tr>
         @foreach ($projects as $project)
             <tr>
-                <td>{{ ++$i }}</td>
+                <td >{{ ++$i }}</td>
                 <td>{{ $project->fname }}</td>
                 <td>{{ $project->lname }}</td>
                 <td>{{ $project->age }}</td>

@@ -17,7 +17,8 @@ use App\Http\Controllers\Blood_inventoryController;
 Route::get('/', function () {
     return view('index');
 });
-//Route::resource('index',ProjectController::class);
-Route::resource('projects',ProjectController::class);
-Route::resource('blood_inventories',Blood_inventoryController::class);
+Route::resources([
+    'projects' => ProjectController::class,
+    'Blood_inventoryControlleries' => Blood_inventoryController::class
+]);
 

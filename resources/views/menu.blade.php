@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<nav class="navbar-inverse  navbar-fixed-top bg-danger"  style="color:white;" role="navigation">
+<nav class="navbar-inverse  navbar-fixed-top"  style="color:white;" role="navigation">
 
 
         <div class="navbar-header">
