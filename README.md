@@ -73,109 +73,63 @@ register.blade.php
 bloodstore.blade.php
 handover.blade.php
 select.blade.php
- 
-ok.blade.php
-
-*
-*
-this project has two video Tutorials helps for 
-understand in video forder:
-
-
-
+ ok.blade.php
 * Home Page
 * login page presense on index hage
 * Authentication (login, logout)
-* 
-* Search in Donar Location
-* Blog with [Facebook](http://facebook.com) comments
-* Search in Blog Name
-* Manuel page
-* Contact us page
-* About us page
+*
+##Picture Directory:
 
-* Users roles : administrator (All access and Create other user), Simple user (create their own Donar profile)
-* Users admin (show, edit, delete, create)
-* About Donar and Blog Post  with [CKEditor](http://ckeditor.com).
+-includes the pictures show how system it work by pictures
+-this pictures includes how system works step by step
+from index page up to admin page same as video.
+*this project has two video Tutorials helps for 
+##Video Directory:
+ understand in video forder:
 
 
-## Front-end view 
-
-### Home Page
-![Home](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBank.png)
-
-### Donar Page
-![Donar](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankD.png)
-
-### Donar Profile
-![DonarP](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankDP.png)
-
-### Blog Page
-![Blog](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankB.png)
-
-### Post Page
-![Post](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankBP.png)
-
-### 404 Page
-![Page](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBank404.png)
-
-### About Us Page
-![About](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankA.png)
-
-### Contact Us Page(Responsive Mobile Design)
-![Contact](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankC.png)
-
-### Manuel Page
-![Manuel](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankM.png)
-
- ### LogIn Page
-![LogIn](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankL.png)
+##System OverView
+------------------
+Blood Bank Management System (BBMS) is a web based system that can assists the information of blood bank during its handling in the blood bank.
+With this system, the user of this system can key in the result of blood test that has been conducted 
+to each of the blood bank received by the blood bank.And also this system is developed by using laravel 8.0
+via this system Volunteer are able to be registered  as blood Donor and also his\her record is managed properly.
 
 
-## Back-end view 
+##Problem statements
+--------------------
+-The major problem in old Blood banking systems was that they don’t follow the actual needs of users.
+-Tracking the database was complicated when the details are maintained manually.
+-There was a shortage and sometimes unavailability of rare blood groups due to fewer modules i.e. patient and donors.
+-data will be losen simply.
 
-Credentials to log in:
-
-Link: https://YourDomain/login Or 
-
-http://localhost:8000/login
-
-
-Email: admin@admin.com
-
-Password: **password**
-
-### DashBoard Page
-![DashBoard](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankDB.png)
-
-### User Page
-![User](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankU.png)
-
-### Donar Profile index Page
-![Donarindex](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankAD.png)
-
-### Create Donar Profile Page
-![CreateDonar](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankCD.png)
-
-### Blog index Page
-![Blogindex](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankAB.png)
-
-### Create Blog Page
-![CreateBlog](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankBC.png)
-
-### Change Password
-![Change](https://raw.githubusercontent.com/MinhazulKabir/BloodBank/master/MinhazulKabirAppPicture/BloodBankCP.png)
+##use case1
+--------
+-A better idea is to using this system but it still under development.
+-This application is providing each entity the facility to approach nearby blood donors so that it will become much easier 
+  to search blood groups in the hour of need when our project it was successfull implemented.
+-to manager communication between blood Donor, petient and blood bank  will be easy. 
 
 
 
-### License
+##Aims & Statements
+-------------------
+-To bridge the gap between blood banks, hospitals, volunteer donors and needy people, through this system.
+-To facilitate the search process for needy people and make it easier than before.
+-To reduce the data entry process.
+-To provide dynamic database that is storing donors Information and can communicate with them easily.
 
-Please use and re-use however you want.
+##use case2
+-----------------------
+-is to manage blood bank  efficiently  as it called Blood bank Management system and produce good interactive between blood bank Administraction,blood Donors and patient.
+- admin of system will be able view report ,add Blood donor, add blood with volume and prove blood request
+
+##Limitation
+----------------
+-low skills about framework installation and workflow.
+-low skills about MVC(Model View and Contreller)
+-time were litter becouse of study of defferent modules
 
 
-## More from BloodBank Project
-- Follow My [Twitter](https://twitter.com/mminhazulkabir) and [Facebook](https://www.facebook.com/MinhazulKabir)
-- Email Me kabir110409@acc.edu.bd
-- One user can see others profile. You can solve this problem. 
-- You can show the available Blood in these project.
-- You will insert your [Facebook](http://facebook.com) comments using [FacebookDevekoper](https://developers.facebook.com/) . Note: because of some unavoidable problem My [Facebook](http://facebook.com) comments do not work properly(properly).
+
+ 
