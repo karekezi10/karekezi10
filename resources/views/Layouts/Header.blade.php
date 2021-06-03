@@ -8,7 +8,7 @@
 
 <!-- Morris Charts CSS -->
 
-<link href="../css/boxicons.css" rel="stylesheet">
+<link href=".../css/boxicons.css" rel="stylesheet">
 <link href="../css/boxicons.min.css" rel="stylesheet">
 <link href="../css/animations.min.css" rel="stylesheet">
 <!-- Custom Fonts -->
@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<nav class="navbar-inverse  navbar-fixed-top "  style="color:white;" role="navigation">
+<nav class="navbar-inverse   navbar-fixed-top "  style="color:white;" role="navigation">
 
 
         <div class="navbar-header">
@@ -67,13 +67,13 @@
         </ul>
         <!-- /.navbar-top-links -->
 
-        <div class="navbar-default btn-danger sidebar" role="navigation"style="top:40%;" >
-            <div class="sidebar-nav navbar-collapse bg-danger">
-                <ul class="nav" id="side-menu bg-danger">
+        <div class="navbar-default sidebar" role="navigation"style="top:40%;" >
+            <div class="sidebar-nav navbar-collapse " style="font-size:small;">
+                <ul class="nav" id="side-menu">
 
 <!-- /.-Search -->
 
-                    <li class="sidebar-search bg-danger">
+                    <li class="sidebar-search">
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" placeholder="Search...">
                             <span class="input-group-btn">
@@ -85,35 +85,60 @@
                         <!-- /input-group -->
                     </li>
                   
-                    <li class="bg-danger">
-                        <a href="#" class="active "><i class="fa fa-dashboard fa-fw text-danger">Dashboard</i> </a>
+                    <li class="">
+                        <a href="#" class="text-danger"><i class="fas fa-dashboard fa-fw text-danger"></i>Dashboard </a>
                     </li>
                     <li>
-                    <a  href="#"><i class="fa fa-home fa-fw  text-danger"></i>Home </a> 
+                    <a  href="{{ route('home') }}" class="text-danger"><i class="fa fa-home fa-fw  text-danger"></i>Home</a> 
+                        <ul class="nav nav-second-level">
+                            
+                    <li>
+                                 
+                <a  href="{{ route('projects.index') }}" class="text-danger"><i class="fa fa-users text-danger"> </i>Add Donor
+                    </a>
+                    <a  href="ok" class="text-danger"><i class="fa fa-th-list text-danger"></i>Request</a> 
                         <ul class="nav nav-second-level">
                             <li>
-                            
-                <a  href="{{ route('projects.create') }}" ><i class="fa fa-users text-danger"> </i>Add Donor
-                    </a>
+               
 
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-tint text-danger"> </i>Blood Donations</a>
+                                <a href="select" class="text-danger" ><i class="fa fa-tint text-danger"> </i>Blood Donations</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-th-list text-danger"></i>Request </a>
+                    
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-edit fa-fw text-danger"> </i>HandedOver</a>
+                        <a href="handover" class="text-danger"><i class="fa fa-edit fa-fw text-danger"> </i>HandedOver</a>
                     </li>
                    
                    
                    
                     <li class="bg-light" style="background-color:white">
-                        <a href="#"><i class="fa fa-users fa-w-20 text-danger"></i>Users <span class="fa arrow"></span></a>
+                    <a href="{{ route('logout') }}" class=" text-danger">Logout<i class="fa fa user-logout"></i></a>
+                       
+                        
+                    </li>
+                    <li class="bg-light" style="background-color:white">
+                        <a href="#"></span></a>
+                       
+                        
+                    </li>
+                    <li class="bg-light" style="background-color:white">
+                        <a href="#"> </span></a>
+                       
+                        
+                    </li>
+                    <li class="bg-light" style="background-color:white">
+                        <a href="#"> </span></a>
+                       
+                        
+                    </li>
+                    <li class="bg-light" style="background-color:white">
+                        <a href="#"> </span></a>
                        
                         
                     </li>

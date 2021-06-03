@@ -1,26 +1,21 @@
 @extends('layouts.app')
 @extends('layouts.Header')
+
 @section('content')
+
+<div class="card" style="position:absolute;top: 55px;background-color:white;">
 <div class="container"  style='width:60%;top:2%;'>
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Add New Donor</h2>
+                <h5 style="color:black;">Add New Donor</h5>
             </div>
             
         </div>
     </div>
 
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    
+    <div class="alert bg-primary">
     <form action="{{ route('projects.store') }}" method="POST" >
         @csrf
     
@@ -61,9 +56,9 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-danger">Submit</button>
             </div>
         </div>
 
-    </form></div>
+    </form></div></div></div>
 @endsection

@@ -28,6 +28,8 @@
 
         <ul class="nav navbar-nav navbar-left navbar-top-links">
             <li><a href="#"><i class="fa fa-home fa-fw"></i> BBMS</a></li>
+        <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
+        <li> <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
         </ul>
   <!-- /.navbar-top-links -->
 

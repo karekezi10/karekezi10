@@ -8,7 +8,7 @@
                 <h2 style="margin-left:20;">Blood Donors! </h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('blood_inventories.create') }}" title="Create a project"> <i class="fas fa-plus-circle"></i>
+               
                     </a>
             </div>
         </div>
@@ -69,6 +69,6 @@
     </table>
     </div>
 
-    {!! $blood_inventories->links() !!}
+   
 
 @endsection

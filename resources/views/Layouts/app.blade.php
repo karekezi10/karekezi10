@@ -45,7 +45,7 @@
     @show
 
     <div class="container " style="margin-left:21%;
-    margin-top:10%; width:820px;">
+    margin-top:8%; width:890px;  height:90%;">
         @yield('content')
     </div>
     

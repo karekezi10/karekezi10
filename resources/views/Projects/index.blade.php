@@ -2,15 +2,15 @@
 @extends('layouts.Header')
 @section('content')
 
-<div class="card" width="200px" style="background-color: white;" >
+<div class="container" width="400px" style="background-color: white;" >
     <div class="card-header"  style="border: 2px #020202;">
         <div class="card-body">
             <div class="pull-left card-header">
                 <h5 style="margin-left:20;   color: #000;">List of Blood Donors! </h5>
             </div>
-            <a href="{{ route('projects.create') }}" class="btn btn-primary btn-block float-right" style="width: 15%; height: 5%; font-size: small; margin-left: 85%;">
-                <i class="fa fa-plus"></i>  New Entry
-            </a>
+            <a href="{{ route('projects.create') }}" class="btn btn-primary btn-block float-right" style="width: 15%;font-size: small; margin-left: 80%;">
+                <i class="fa fa-plus"></i>  New Donor</a>
+            <a href="bloodstore" class="btn btn-primary btn-block float-right" style="width: 15%; height: 5%; font-size: small; margin-left: 35%;">Gutanga Amaraso</a>
         </div>
     </div>
 
@@ -20,7 +20,7 @@
         </div>
     @endif
 
-    <table class="card-body" style="width:93%;margin-left: 4%; background-color:white; color:black; font-size: small; border: #4cae4c">
+    <table class="card-body" style="width:99%;margin-left: 4%; background-color:white; color:black; font-size: small; border: #4cae4c">
         <tr class="btn-primary">
             <th >No</th>
             <th>Fname</th>

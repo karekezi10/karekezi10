@@ -30,7 +30,9 @@ class ProjectController extends Controller
     public function createinvato1(){
         return view('createinvato');
     }
-
+    public function home(){
+        return view('home');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -66,7 +68,10 @@ class ProjectController extends Controller
     {
         return view('projects.show', compact('project'));
     }
-
+    public function userView()
+    {
+        return view('\projects.index');
+    }
     /**
      * Show the form for editing the specified resource.
      *
@@ -113,103 +118,11 @@ class ProjectController extends Controller
         return redirect()->route('projects.index')
             ->with('success', 'Donor successfully Removed');
     }
-}
 
-
-
-class Blood_inventoryController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     * 
-     */
-    public function index1()
-    {
-        $blood_inventories = blood_inventory::latest()->paginate(5);
-
-        return view('createinvato')
-            ->with('i', (request()->input('page', 1) - 1) * 5);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function createinvato1()
-    {
-        return view('projects.createinvato');
-    }
 
    
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store1(Request $request)
-    {
-        $request->validate([
-            'blood_group' => 'required',
-            'volume' => 'required',
-            'status' => 'required',
-            'donor_id' => 'required',
-            'request_id' => 'required',
-            
-        
-        ]);
-        blood_inventory::create1($request->all());
-
-        return redirect()->route('projects.index')
-            ->with('success', 'User created successfully.');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show1($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit1($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update1(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
+
+
+
+

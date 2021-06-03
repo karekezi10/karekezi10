@@ -30,10 +30,10 @@ class Blood_inventoryController extends Controller
      */
     public function createinvato()
     {
-        return view('projects.createinvato');
+        return view('blood_inventories.createinvato');
     }
 
-   
+    
 
     /**
      * Store a newly created resource in storage.
@@ -54,7 +54,7 @@ class Blood_inventoryController extends Controller
         ]);
         blood_inventory::create($request->all());
 
-        return redirect()->route('projects.index')
+        return redirect()->route('blood_inventories.index')
             ->with('success', 'User created successfully.');
     }
 
@@ -102,4 +102,32 @@ class Blood_inventoryController extends Controller
     {
         //
     }
+    public function ok()
+    {
+        return view("ok");
+    }
+    public function okk(Request $request)
+    {
+        $request->validate([
+            'blood_group' => 'required',
+            'volume' => 'required',
+            'status' => 'required',
+            'donor_id' => 'required',
+            'request_id' => 'required',
+            ]);
+        blood_inventory::create($request->all());
+
+        return view('ok')
+            ->with('success', 'User created successfully.');
+    }
+    public function select()
+    {
+    
+        $blood_inventories  =  blood_inventory::latest()->paginate(5);
+
+        return view('select', compact('blood_inventories'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
+    
 }
