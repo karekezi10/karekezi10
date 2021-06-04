@@ -51,29 +51,31 @@ files:
 ## Views(Front-end view ):
 #Directories:
 auth:
-login.blade.php
-register.blade.php
+*login.blade.php
+*register.blade.php
 
 *Layouts:
-app.blade.php
-Head.blade.php
+*app.blade.php
+)Head.blade.php
 
 *Projects:
-index.blade.php
-create.blade.php
-Edit.blade.php
-update.blade.php
-show.blade.php
-register.blade.php
-verify.blade.php
+---------
+*index.blade.php
+*create.blade.php
+*Edit.blade.php
+*update.blade.php
+*show.blade.php
+*register.blade.php
+*verify.blade.php
 
 Views:
-index.blade.php
-register.blade.php
-bloodstore.blade.php
-handover.blade.php
-select.blade.php
- ok.blade.php
+---------
+*index.blade.php
+*register1.blade.php
+*bloodstore.blade.php
+*handover.blade.php
+*select.blade.php
+ *ok.blade.php
 * Home Page
 * login page presense on index hage
 * Authentication (login, logout)
@@ -86,8 +88,8 @@ from index page up to admin page same as video.
 *this project has two video Tutorials helps for 
 ##Video Directory:
  understand in video forder:
-
-
+*1(1).mp4
+*1(2).mp4
 ##System OverView
 ------------------
 Blood Bank Management System (BBMS) is a web based system that can assists the information of blood bank during its handling in the blood bank.
